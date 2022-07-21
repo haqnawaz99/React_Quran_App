@@ -55,13 +55,14 @@ body {
 }
 
 .task {
-      display: flex;
-        justify-content: center;
-        align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  direction: rtl;
 }
 
 .task.reminder {
@@ -112,4 +113,9 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+@font-face {
+  font-family: "NOOREHUDA";
+  src: local("NOOREHUDA"), url("./fonts/NOOREHUDA.TTF") format("truetype");
+  font-weight: bold;
 }
