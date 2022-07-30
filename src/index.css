@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  width: 100%;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -56,6 +56,7 @@ body {
 
 .task {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
   background: #f4f4f4;
@@ -118,4 +119,16 @@ footer {
   font-family: "NOOREHUDA";
   src: local("NOOREHUDA"), url("./fonts/NOOREHUDA.TTF") format("truetype");
   font-weight: bold;
+}
+@font-face {
+  font-family: "JNN";
+  src: local("JameelNooriNastaleeq"), url("./fonts/JameelNooriNastaleeq.ttf") format("truetype");
+ 
+}
+
+.urduTarjuma{
+  font-family:Jameel Noori Nastaleeq;
+  font-size: larger;
+  direction: rtl;
+  padding: 25px;
 }

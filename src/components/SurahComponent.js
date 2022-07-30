@@ -4,7 +4,8 @@ const SurahComponent = ({ surah }) => {
     <>
       <div className="task font-face-noorehuda">
         <h3>{surah?.SurahNameU}</h3>
-        {/* <p>{surah.SurahIntro}</p> */}
+        <h3>{surah?.SuraID}</h3>
+        {/* <p>{su rah.SurahIntro}</p> */}
       </div>
     </>
   );
