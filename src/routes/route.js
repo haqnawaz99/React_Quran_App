@@ -8,27 +8,10 @@ const AppRoute = ({
   isAuthProtected,
   ...rest
 }) => {
-
   return (
     <Route
       {...rest}
       render={(props) => {
-        // if (isAuthProtected && !localStorage.getItem("aetmaad-auth-token")) {
-        //   return (
-        //     <Redirect
-        //       to={{ pathname: "/login", state: { from: props.location } }}
-        //     />
-        //   );
-        // }
-
-        // else {
-        //   return (
-        //     <Layout>
-        //       <Component {...props} />
-        //     </Layout>
-        //   );
-         
-        // }
         return (
           <Layout>
             <Component {...props} />

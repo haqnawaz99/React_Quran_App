@@ -1,5 +1,4 @@
 import "../App.css";
-import ReactDOM from "react-dom";
 const AyahComponent = ({ ayah }) => {
   // let temp = ayah.TarjumaLafziDrFarhatHashmi.replaceAll("] [", "],[");
 
@@ -10,17 +9,14 @@ const AyahComponent = ({ ayah }) => {
         <h3>{ayah?.arabic_text}</h3>
       </div>
       <div className="urduTarjuma">
-        <h3>مولانا فتح محمد جالندھری</h3>
-        <h3>{ayah?.fateh_muhammad_jalandhri}</h3>
-        <h3>مولانا محمود الحسن</h3>
-        <h3>{ayah?.mehmood_ul_hassan}</h3>
+        <h3>مولانا فتح محمد جالندھری {ayah?.fateh_muhammad_jalandhri}</h3>
+        <h3>مولانا محمود الحسن {ayah?.mehmood_ul_hassan}</h3>
+        <h3>لفظی ترجمہ : {ayah?.TarjumaLafziNazarAhmad}</h3>
       </div>
 
       <div>
-        <h3>Mufti Taqi Usmani</h3>
-        <h3>{ayah?.mufti_taqi_usmani}</h3>
-        <h3>Dr Mohsin Khan</h3>
-        <h3>{ayah?.dr_mohsin_khan}</h3>
+        <h3>Mufti Taqi Usmani: {ayah?.mufti_taqi_usmani}</h3>
+        <h3>Dr Mohsin Khan: {ayah?.dr_mohsin_khan}</h3>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Switch, BrowserRouter as Router } from "react-router-dom";
 
 import AppRoute from "./routes/route";
 import { publicRoutes } from "./routes/";
